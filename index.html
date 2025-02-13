@@ -6,18 +6,14 @@
     <!-- Babel Script -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/jsx">
-      const domNode = document.getElementById('app');
-      const root = ReactDOM.createRoot(domNode);
-      root.render(<h1>Develop. Preview. Ship.</h1>);
-    </script>
+      const app = document.getElementById("app")
 
-    <!-- <script type="text/javascript">
-      const app = document.getElementById('app');
-      const header = document.createElement('h1');
-      const text = 'Develop. Preview. Ship.';
-      const headerContent = document.createTextNode(text);
-      header.appendChild(headerContent);
-      app.appendChild(header);
-    </script> -->
+      function header() {
+         return (<h1>Develop. Preview. Ship.</h1>)
+       }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(header);
+    </script>
   </body>
 </html>
